@@ -73,21 +73,21 @@ public class PlayerController : MonoBehaviour
             Debug.Log(colourWheelPicker.transform.eulerAngles.z);
 
             //Pink colour Pick
-            if (colourWheelPicker.transform.eulerAngles.z <= 12 && colourWheelPicker.transform.eulerAngles.z >= 0 || colourWheelPicker.transform.eulerAngles.z <= 360 && colourWheelPicker.transform.eulerAngles.z >= 345)
+            if(colourWheelPicker.transform.eulerAngles.z <= 12 && colourWheelPicker.transform.eulerAngles.z >= 0 || colourWheelPicker.transform.eulerAngles.z <= 360 && colourWheelPicker.transform.eulerAngles.z >= 345)
             {
                 Debug.Log("IM SETTING GAMESTATE TO TURN PINK");
                 colourState = "Pink";
             }
 
             //orange colour pick
-            if (colourWheelPicker.transform.eulerAngles.z <= 55 && colourWheelPicker.transform.eulerAngles.z >= 22)
+            if(colourWheelPicker.transform.eulerAngles.z <= 55 && colourWheelPicker.transform.eulerAngles.z >= 22)
             {
                 Debug.Log("IM SETTING GAMESTATE TO TURN ORANGE");
                 colourState = "Orange";
             }
 
             //teal colour pick
-            if (colourWheelPicker.transform.eulerAngles.z <= 338 && colourWheelPicker.transform.eulerAngles.z >= 304)
+            if(colourWheelPicker.transform.eulerAngles.z <= 338 && colourWheelPicker.transform.eulerAngles.z >= 304)
             {
                 Debug.Log("IM SETTING GAMESTATE TO TURN TEAL");
                 colourState = "Teal";
@@ -102,12 +102,12 @@ public class PlayerController : MonoBehaviour
             this.GetComponent<SpriteRenderer>().color = new Color32(237, 0, 255, 225);
         }
 
-        if (colourState == "Teal")
+        if(colourState == "Teal")
         {
             this.GetComponent<SpriteRenderer>().color = new Color32(0, 245, 255, 225);
         }
 
-        if (colourState == "Orange")
+        if(colourState == "Orange")
         {
             this.GetComponent<SpriteRenderer>().color = new Color32(255, 124, 0, 225);
         }
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
         moveDirection = new Vector3(moveX, moveY).normalized; 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             isDashing = true;
         }
@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
 
-        if (isDashing)
+        if(isDashing)
         {
             rb.MovePosition(transform.position + moveDirection * dashSpeed);
             isDashing = false;
@@ -143,12 +143,12 @@ public class PlayerController : MonoBehaviour
             gameState = "Lose";
        }
 
-        if (collision.tag == "TealEnemy" && isDashing == false || colourState != "Teal")
+        if(collision.tag == "TealEnemy" && isDashing == false || colourState != "Teal")
         {
             gameState = "Lose";
         }
 
-        if (collision.tag == "OrangeEnemy" && isDashing == false || colourState != "Orange")
+        if(collision.tag == "OrangeEnemy" && isDashing == false || colourState != "Orange")
         {
             gameState = "Lose";
         }
