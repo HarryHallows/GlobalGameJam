@@ -47,5 +47,16 @@ public class Conductor : MonoBehaviour
     void Update()
     {
         songPosition = (float)(AudioSettings.dspTime - dspSongTime - firstBeatOffset);
+
+
+        if(songPosition < 8)
+        {
+            songBpm = 8;
+        }
+
+        if(songPosition >= 8 && songPosition <= 16)
+        {
+            songBpm = 16;
+        }
     }
 }
