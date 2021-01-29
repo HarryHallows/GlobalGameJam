@@ -4,44 +4,42 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    Conductor conductor;
+    [SerializeField] private Conductor conductor;
 
     [SerializeField] private GameObject spawnPoint;
 
     [SerializeField] private GameObject[] spawnObj;
 
+
+    ObjectPooler objPooler;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        objPooler = ObjectPooler.Instance;
+
         conductor = conductor.GetComponent<Conductor>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Instantiate 2 waves every 8 beats
+
+          WaveSpawner();
         
+
+        // objPooler.SpawnFromPool("Triangle", transform.position, Quaternion.identity);
     }
 
     //Spawn objects in waves with breaks in between
     private void WaveSpawner()
     {
-      
+        objPooler.SpawnFromPool("Triangle", transform.position, Quaternion.identity);
     }
 
-    IEnumerator WaveSpawnLogic()
-    {
-        if (conductor.secPerBeat == 8)
-        {
-            //Instantiate 2 waves every 8 beats 
-        }
-
-        if (conductor.secPerBeat == 16)
-        {
-            //Instantiate 6 waves every 16 beats 
-        }
-
-        yield return new WaitForSeconds(0);
-    }
+ 
 
     //Spawn Objects one by one
     private void IndividualSpawner()
