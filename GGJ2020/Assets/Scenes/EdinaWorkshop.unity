@@ -2242,6 +2242,7 @@ GameObject:
   - component: {fileID: 1501640151}
   - component: {fileID: 1501640150}
   - component: {fileID: 1501640152}
+  - component: {fileID: 1501640153}
   m_Layer: 0
   m_Name: MusicSheet
   m_TagString: Untagged
@@ -2335,6 +2336,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1501640153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501640149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c75ac73043e543b5a3eaaf80f9e6209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAnim: {fileID: 1972245683}
+  keyGone: 0
+  animTime: 0
 --- !u!1 &1559399988
 GameObject:
   m_ObjectHideFlags: 0
