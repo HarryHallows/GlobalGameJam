@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 6281961283921749899}
   - component: {fileID: 2722251882931239140}
   - component: {fileID: 3484671788122646264}
+  - component: {fileID: 1869868980}
   m_Layer: 0
   m_Name: Trail2
   m_TagString: Untagged
@@ -938,7 +939,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -2755,7 +2756,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.35
+      scalar: 3.21
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4885,6 +4886,23 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1869868980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045369276253864335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: ef22cf7445fa1d146af163305b31a855, type: 2}
 --- !u!1 &1838638143673556982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,6 +4914,7 @@ GameObject:
   - component: {fileID: 3905103044711699530}
   - component: {fileID: 6329799453902883058}
   - component: {fileID: 3956907404725073090}
+  - component: {fileID: 752870439}
   m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
@@ -5751,7 +5770,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -7568,7 +7587,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.35
+      scalar: 3.21
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9698,6 +9717,23 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &752870439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838638143673556982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 358b9b09f7c1dc54a9fad82b656cfa22, type: 2}
 --- !u!1 &5166990379654598741
 GameObject:
   m_ObjectHideFlags: 0
