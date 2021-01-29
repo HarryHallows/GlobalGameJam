@@ -25,7 +25,7 @@ public class GrowthSpike : MonoBehaviour
     {
         if (MyState == "Growing")
         {
-            if (this.transform.localScale != new Vector3(1f, 1f, 1f))
+            if (this.transform.localScale != new Vector3(0.5f, 0.5f, 0.5f))
             {
                 MyTimer -= 1;
                 if (MyTimer <= 0)
@@ -36,7 +36,7 @@ public class GrowthSpike : MonoBehaviour
 
             }
 
-            if (this.transform.localScale == new Vector3(1f, 1f, 1f))
+            if (this.transform.localScale == new Vector3(0.5f, 0.5f, 0.5f))
             {
                 MyState = "Move";
             }
