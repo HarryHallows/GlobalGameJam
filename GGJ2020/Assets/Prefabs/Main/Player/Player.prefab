@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 2722251882931239140}
   - component: {fileID: 3484671788122646264}
   - component: {fileID: 1869868980}
+  - component: {fileID: 6337271197580939902}
   m_Layer: 0
   m_Name: Trail2
   m_TagString: Untagged
@@ -189,7 +190,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -939,7 +940,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -992,7 +993,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4903,6 +4904,23 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: ef22cf7445fa1d146af163305b31a855, type: 2}
+--- !u!114 &6337271197580939902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045369276253864335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: ef22cf7445fa1d146af163305b31a855, type: 2}
 --- !u!1 &1838638143673556982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,6 +4933,7 @@ GameObject:
   - component: {fileID: 6329799453902883058}
   - component: {fileID: 3956907404725073090}
   - component: {fileID: 752870439}
+  - component: {fileID: 5405287421780131325}
   m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
@@ -5020,7 +5039,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5770,7 +5789,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5823,7 +5842,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -9734,6 +9753,23 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 358b9b09f7c1dc54a9fad82b656cfa22, type: 2}
+--- !u!114 &5405287421780131325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838638143673556982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 358b9b09f7c1dc54a9fad82b656cfa22, type: 2}
 --- !u!1 &5166990379654598741
 GameObject:
   m_ObjectHideFlags: 0
@@ -10047,7 +10083,7 @@ GameObject:
   - component: {fileID: 5388642702527541610}
   - component: {fileID: 5388642702527541613}
   - component: {fileID: 5388642702527541609}
-  - component: {fileID: 7993962207532083830}
+  - component: {fileID: 4290800983822304608}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10139,7 +10175,7 @@ MonoBehaviour:
   rb: {fileID: 5388642702527541613}
   colourWheel: {fileID: 5388642702353387811}
   colourWheelPicker: {fileID: 5388642701846886917}
-  moveSpeed: 7.5
+  moveSpeed: 10
   dashSpeed: 2
   isDashing: 0
   gameState: 
@@ -10191,7 +10227,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
---- !u!95 &7993962207532083830
+--- !u!95 &4290800983822304608
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -10201,7 +10237,7 @@ Animator:
   m_GameObject: {fileID: 5388642702527541612}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 187c666b673204b6ab5b15e1eccd6992, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4aead133b3051460996aa710c0974a9d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
