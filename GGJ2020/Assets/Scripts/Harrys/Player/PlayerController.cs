@@ -123,6 +123,30 @@ public class PlayerController : MonoBehaviour
         {
             isDashing = true;
         }
+
+        //Vertical Clamp
+        if(this.transform.position.y > 10)
+        {
+            Debug.Log("Move player to bottom");
+            this.transform.position = new Vector3(0, -10, 0);
+        }
+
+        if (this.transform.position.y < -10)
+        {
+            this.transform.position = new Vector3(0, 10, 0);
+        }
+
+        //Horizontal Clamp
+        if (this.transform.position.x > 18)
+        {
+            Debug.Log("Move player to other side");
+            this.transform.position = new Vector3(-18, 0, 0);
+        }
+
+        if (this.transform.position.x < -18)
+        {
+            this.transform.position = new Vector3(18, 0, 0);
+        }
     }
 
     private void Movement()
