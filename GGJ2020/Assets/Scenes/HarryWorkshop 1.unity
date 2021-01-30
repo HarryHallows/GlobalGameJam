@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 114034274}
+  - component: {fileID: 114034275}
   m_Layer: 0
   m_Name: SpawnerOrange4
   m_TagString: Untagged
@@ -153,6 +154,29 @@ Transform:
   m_Father: {fileID: 1149497630}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114034275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114034273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe4ed160fbd2401ebafbb861412b408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 888177735}
+  updateStep: 0.5
+  sampleDataLenght: 2048
+  clipLoudness: 0
+  projectile: {fileID: 1453242024}
+  sizeFactor: 30
+  minSize: 0
+  maxSize: 500
+  enemyList:
+  - {fileID: 1493379767341543009, guid: eea490b226591df478034f06ac934558, type: 3}
+  stepTimerCheck: 0
 --- !u!1 &120041129 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2100906182500176802, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
@@ -167,7 +191,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 134547222}
-  - component: {fileID: 134547225}
   - component: {fileID: 134547224}
   - component: {fileID: 134547223}
   m_Layer: 0
@@ -176,7 +199,7 @@ GameObject:
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &134547222
 Transform:
   m_ObjectHideFlags: 0
@@ -233,24 +256,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 4558150392171948487, guid: 9e5e742b97117c04bb7ca036836105ae, type: 3}
   stepTimerCheck: 0
---- !u!114 &134547225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134547221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 134547221}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!1 &140117771
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 140117772}
+  - component: {fileID: 140117773}
   m_Layer: 0
   m_Name: SpawnerTeal4
   m_TagString: Untagged
@@ -281,6 +287,29 @@ Transform:
   m_Father: {fileID: 1149497630}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140117773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140117771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe4ed160fbd2401ebafbb861412b408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 888177735}
+  updateStep: 0.5
+  sampleDataLenght: 2048
+  clipLoudness: 0
+  projectile: {fileID: 1453242024}
+  sizeFactor: 30
+  minSize: 0
+  maxSize: 500
+  enemyList:
+  - {fileID: 6484347156298600628, guid: d20a89331e6baaf44b1a020bec7e8847, type: 3}
+  stepTimerCheck: 0
 --- !u!1 &213772648
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +349,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262103699}
-  - component: {fileID: 262103698}
   - component: {fileID: 262103697}
   - component: {fileID: 262103696}
   m_Layer: 0
@@ -372,24 +400,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 1695569769255721351, guid: 4bc543f3f2cf6214dbe6ba00ddd126db, type: 3}
   stepTimerCheck: 0
---- !u!114 &262103698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262103695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 262103695}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!4 &262103699
 Transform:
   m_ObjectHideFlags: 0
@@ -404,6 +414,77 @@ Transform:
   m_Father: {fileID: 561370816}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &267054938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267054940}
+  - component: {fileID: 267054939}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &267054939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267054938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conductor: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  spawnObj: []
+  waves:
+  - name: SingleBeat
+    musicNote: {fileID: 3313484447596560351, guid: 34754246b175453408c9f9ca957acf9c, type: 3}
+    count: 3
+    spawnRate: 1
+  - name: DoubleBeat
+    musicNote: {fileID: 754473846787168895, guid: aade160be960bb541a6ef6808eff689f, type: 3}
+    count: 2
+    spawnRate: 0
+  - name: SingleBeat
+    musicNote: {fileID: 3313484447596560351, guid: 34754246b175453408c9f9ca957acf9c, type: 3}
+    count: 1
+    spawnRate: 0
+  spawnPoints:
+  - {fileID: 1372359317}
+  - {fileID: 848924870}
+  - {fileID: 1649845292}
+  - {fileID: 1083057096}
+  timeBetweenWaves: 5
+  waveCountDown: 0
+  searchCountDown: 1
+--- !u!4 &267054940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267054938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.334027, y: -1.56, z: -5.3829656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1372359317}
+  - {fileID: 848924870}
+  - {fileID: 1649845292}
+  - {fileID: 1083057096}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288744314
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 288744315}
+  - component: {fileID: 288744316}
   m_Layer: 0
   m_Name: SpawnerPink4
   m_TagString: Untagged
@@ -434,6 +516,29 @@ Transform:
   m_Father: {fileID: 1149497630}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &288744316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288744314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe4ed160fbd2401ebafbb861412b408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 888177735}
+  updateStep: 0.5
+  sampleDataLenght: 2048
+  clipLoudness: 0
+  projectile: {fileID: 1453242024}
+  sizeFactor: 30
+  minSize: 0
+  maxSize: 500
+  enemyList:
+  - {fileID: 910208526869867130, guid: 1e6343a06ea406d4b8f6760ae797f0ba, type: 3}
+  stepTimerCheck: 0
 --- !u!1 &333503015
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &561370816
 Transform:
   m_ObjectHideFlags: 0
@@ -571,7 +676,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 598246839}
-  - component: {fileID: 598246842}
   - component: {fileID: 598246841}
   - component: {fileID: 598246840}
   m_Layer: 0
@@ -637,24 +741,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 1695569769255721351, guid: 4bc543f3f2cf6214dbe6ba00ddd126db, type: 3}
   stepTimerCheck: 0
---- !u!114 &598246842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598246838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 598246838}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!1 &716223935
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +750,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 716223939}
-  - component: {fileID: 716223938}
   - component: {fileID: 716223937}
   - component: {fileID: 716223936}
   m_Layer: 0
@@ -673,7 +758,7 @@ GameObject:
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &716223936
 Animator:
   serializedVersion: 3
@@ -716,24 +801,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 4558150392171948487, guid: 9e5e742b97117c04bb7ca036836105ae, type: 3}
   stepTimerCheck: 0
---- !u!114 &716223938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716223935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 716223935}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!4 &716223939
 Transform:
   m_ObjectHideFlags: 0
@@ -911,7 +978,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 841060204}
-  - component: {fileID: 841060206}
   - component: {fileID: 841060207}
   - component: {fileID: 841060205}
   m_Layer: 0
@@ -954,24 +1020,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &841060206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841060203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 841060203}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!114 &841060207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,6 +1043,36 @@ MonoBehaviour:
   enemyList:
   - {fileID: 4283972121837653921, guid: fe533855ca9669340a55fefb3acb9be7, type: 3}
   stepTimerCheck: 0
+--- !u!1 &848924869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848924870}
+  m_Layer: 0
+  m_Name: NoteSpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &848924870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848924869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: -6.19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 267054940}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888177734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1229,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1006021478}
-  - component: {fileID: 1006021481}
   - component: {fileID: 1006021480}
   - component: {fileID: 1006021479}
   m_Layer: 0
@@ -1160,7 +1237,7 @@ GameObject:
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1006021478
 Transform:
   m_ObjectHideFlags: 0
@@ -1217,24 +1294,36 @@ MonoBehaviour:
   enemyList:
   - {fileID: 4237225298208105906, guid: 247177e80ff918d4387360a39ec28718, type: 3}
   stepTimerCheck: 0
---- !u!114 &1006021481
-MonoBehaviour:
+--- !u!1 &1083057095
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006021477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 1006021477}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083057096}
+  m_Layer: 0
+  m_Name: NoteSpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083057096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083057095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.15, y: -5.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 267054940}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1149497629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1149497630
 Transform:
   m_ObjectHideFlags: 0
@@ -1390,7 +1479,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1185787196}
-  - component: {fileID: 1185787199}
   - component: {fileID: 1185787198}
   - component: {fileID: 1185787197}
   m_Layer: 0
@@ -1456,24 +1544,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 1695569769255721351, guid: 4bc543f3f2cf6214dbe6ba00ddd126db, type: 3}
   stepTimerCheck: 0
---- !u!114 &1185787199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185787195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 1185787195}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!1 &1226480249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,7 +1553,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1226480250}
-  - component: {fileID: 1226480253}
   - component: {fileID: 1226480252}
   - component: {fileID: 1226480251}
   m_Layer: 0
@@ -1549,24 +1618,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 3126469628697791196, guid: ee758ca2006cbb24f9a3ae7557be4dec, type: 3}
   stepTimerCheck: 0
---- !u!114 &1226480253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226480249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 1226480249}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!1 &1249722449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,6 +1627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1249722450}
+  - component: {fileID: 1249722451}
   m_Layer: 0
   m_Name: SpawnerYellow4
   m_TagString: Untagged
@@ -1597,6 +1649,29 @@ Transform:
   m_Father: {fileID: 1149497630}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249722451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249722449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe4ed160fbd2401ebafbb861412b408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 888177735}
+  updateStep: 0.5
+  sampleDataLenght: 2048
+  clipLoudness: 0
+  projectile: {fileID: 1453242024}
+  sizeFactor: 30
+  minSize: 0
+  maxSize: 500
+  enemyList:
+  - {fileID: 5709698631115346545, guid: 19f7f252e43218a40954db490c6b5d1b, type: 3}
+  stepTimerCheck: 0
 --- !u!1 &1281687627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,6 +1739,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1281687628}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1372359316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1372359317}
+  m_Layer: 0
+  m_Name: NoteSpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1372359317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372359316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: 7.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 267054940}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1400938086
 GameObject:
@@ -1798,7 +1903,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1453242025}
-  - component: {fileID: 1453242028}
   - component: {fileID: 1453242027}
   - component: {fileID: 1453242026}
   m_Layer: 0
@@ -1807,7 +1911,7 @@ GameObject:
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1453242025
 Transform:
   m_ObjectHideFlags: 0
@@ -1864,24 +1968,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 4558150392171948487, guid: 9e5e742b97117c04bb7ca036836105ae, type: 3}
   stepTimerCheck: 0
---- !u!114 &1453242028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453242024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 1453242024}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!1 &1569754060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,7 +1977,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1569754061}
-  - component: {fileID: 1569754064}
   - component: {fileID: 1569754063}
   - component: {fileID: 1569754062}
   m_Layer: 0
@@ -1900,7 +1985,7 @@ GameObject:
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1569754061
 Transform:
   m_ObjectHideFlags: 0
@@ -1957,24 +2042,36 @@ MonoBehaviour:
   enemyList:
   - {fileID: 573938435973752134, guid: 94e00de316000754da4e525e5d03ad8f, type: 3}
   stepTimerCheck: 0
---- !u!114 &1569754064
-MonoBehaviour:
+--- !u!1 &1649845291
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1569754060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 1569754060}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1649845292}
+  m_Layer: 0
+  m_Name: NoteSpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1649845292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649845291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 7.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 267054940}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676041053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2196,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1781525664}
-  - component: {fileID: 1781525667}
   - component: {fileID: 1781525666}
   - component: {fileID: 1781525665}
   m_Layer: 0
@@ -2108,7 +2204,7 @@ GameObject:
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1781525664
 Transform:
   m_ObjectHideFlags: 0
@@ -2165,24 +2261,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 4558150392171948487, guid: 9e5e742b97117c04bb7ca036836105ae, type: 3}
   stepTimerCheck: 0
---- !u!114 &1781525667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781525663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 1781525663}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!1 &1835925962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,7 +2322,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1871350110}
-  - component: {fileID: 1871350113}
   - component: {fileID: 1871350112}
   - component: {fileID: 1871350111}
   m_Layer: 0
@@ -2310,24 +2387,6 @@ MonoBehaviour:
   enemyList:
   - {fileID: 1695569769255721351, guid: 4bc543f3f2cf6214dbe6ba00ddd126db, type: 3}
   stepTimerCheck: 0
---- !u!114 &1871350113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871350109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3865e4ed0c7bb2847983f0f37c049cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conductor: {fileID: 888177736}
-  spawnPoint: {fileID: 1871350109}
-  spawnObj:
-  - {fileID: 1400938086}
-  enemyList: []
-  spawnTimer: 0
 --- !u!1001 &1932209353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2413,7 +2472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2022490262
 Transform:
   m_ObjectHideFlags: 0
