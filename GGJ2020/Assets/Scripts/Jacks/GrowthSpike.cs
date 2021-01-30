@@ -7,7 +7,8 @@ public class GrowthSpike : MonoBehaviour
     public string MyDir = "South";
     public string MyState = "Idle";
     int MyTimer = 24;
-    
+    float destoryDelay = 10f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,5 +65,10 @@ public class GrowthSpike : MonoBehaviour
                 this.transform.position = this.transform.position + new Vector3(-0.1f, 0f, 0f);
             }
         }
+    }
+
+    void DestoryMe()
+    {
+        Destroy(gameObject, destoryDelay);
     }
 }

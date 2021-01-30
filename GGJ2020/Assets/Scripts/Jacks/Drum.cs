@@ -11,6 +11,11 @@ public class Drum : MonoBehaviour
     //attack animation
     [SerializeField] private string drumState = "Descend";
     [SerializeField] private float drumSpeed = 2.5f;
+
+    // projectile
+    private int timesBanged = 0;
+
+    float destoryDelay = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +55,19 @@ public class Drum : MonoBehaviour
 
     void Playdrum()
     {
+        timesBanged += 1;
+        //Instantiate
+        if ( timesBanged == 3)
+        {
 
+        }else if ( timesBanged == 6)
+        {
+            timesBanged = 0;
+        }
+    }
+
+    void DestoryMe()
+    {
+        Destroy(gameObject, destoryDelay);
     }
 }

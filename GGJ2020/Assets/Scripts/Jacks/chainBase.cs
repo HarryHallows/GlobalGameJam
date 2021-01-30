@@ -13,6 +13,8 @@ public class chainBase : MonoBehaviour
     bool timeToGo = false;
     [SerializeField] private Transform targetTrans;
     private float angleBetween = 0.0f;
+
+    float destoryDelay = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,5 +43,10 @@ public class chainBase : MonoBehaviour
 
             
             }
+    }
+
+    void DestoryMe()
+    {
+        Destroy(gameObject, destoryDelay);
     }
 }

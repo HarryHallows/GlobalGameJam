@@ -10,6 +10,8 @@ public class TwinWheel : MonoBehaviour
     int maxWheelSize = 6;
     public int wheelSize = 4;
 
+    float destoryDelay = 10f;
+
     [SerializeField] private GameObject[] topWheel;
     [SerializeField] private GameObject[] rearWheel;
     // Start is called before the first frame update
@@ -66,5 +68,10 @@ public class TwinWheel : MonoBehaviour
             }
   
         }
+    }
+
+    void DestoryMe()
+    {
+        Destroy(gameObject, destoryDelay);
     }
 }
