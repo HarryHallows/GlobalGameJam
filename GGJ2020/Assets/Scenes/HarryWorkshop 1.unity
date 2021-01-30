@@ -153,6 +153,11 @@ Transform:
   m_Father: {fileID: 1149497630}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &120041129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2100906182500176802, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+  m_PrefabInstance: {fileID: 1932209353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &134547221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,6 +2328,76 @@ MonoBehaviour:
   - {fileID: 1400938086}
   enemyList: []
   spawnTimer: 0
+--- !u!1001 &1932209353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25236350468782597, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100906182500176802, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907850031542578431, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494188586584310347, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+      propertyPath: m_Name
+      value: ColourPalette
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+--- !u!1 &1979664886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4907850031542578431, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
+  m_PrefabInstance: {fileID: 1932209353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2022490261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,6 +2491,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5388642702527541610, guid: fded2b9b7020e504b8670faac0036716, type: 3}
+      propertyPath: colourWheelPicker
+      value: 
+      objectReference: {fileID: 120041129}
+    - target: {fileID: 5388642702527541610, guid: fded2b9b7020e504b8670faac0036716, type: 3}
+      propertyPath: colourWheel
+      value: 
+      objectReference: {fileID: 1979664886}
     - target: {fileID: 5388642702527541612, guid: fded2b9b7020e504b8670faac0036716, type: 3}
       propertyPath: m_Name
       value: Player
