@@ -20,6 +20,13 @@ public class spawnOnBeat : MonoBehaviour
     public float minSize = 0;
     public float maxSize = 500;
 
+
+    GameObject randomEnemy;
+    public List<GameObject> enemyList = new List<GameObject>();
+
+    [SerializeField] private float stepTimerCheck;
+
+
     private void Awake()
     {
         clipSampleData = new float[sampleDataLenght];
@@ -29,11 +36,12 @@ public class spawnOnBeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        stepTimerCheck += Time.deltaTime;
+
         currentUpdateTime += Time.deltaTime;
 
         if (currentUpdateTime >= updateStep)
-        {
-            currentUpdateTime = 0f;
+        {        
             audioSource.clip.GetData(clipSampleData, audioSource.timeSamples);
             clipLoudness = 0f;
             foreach( var sample in clipSampleData)
@@ -46,11 +54,26 @@ public class spawnOnBeat : MonoBehaviour
             clipLoudness = Mathf.Clamp(clipLoudness, minSize, maxSize);
 
             projectile.transform.localScale = new Vector3(clipLoudness, clipLoudness, clipLoudness);
+            
+
+            currentUpdateTime = 0f;
+            SpawnProjectile();
+        }
+
+        if(stepTimerCheck < 12)
+        {
+            updateStep = 0.5f;
+        }
+
+        if(stepTimerCheck > 12)
+        {
+            updateStep = 0.3f;
         }
     }
 
-    void SpawnProjectile()
+    private void SpawnProjectile()
     {
-
+         randomEnemy = enemyList[Random.Range(0, enemyList.Count)];
+         Instantiate(randomEnemy, this.transform.position, Quaternion.identity);
     }
 }

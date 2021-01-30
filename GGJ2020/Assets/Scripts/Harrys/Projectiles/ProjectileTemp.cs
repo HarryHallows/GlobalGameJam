@@ -30,27 +30,9 @@ public class ProjectileTemp : MonoBehaviour
     void Update()
     {
         transform.Translate(transform.right * moveSpeed * Time.deltaTime, Space.World);
-        
 
-        if (this.transform.position.y > 10)
-        {
-            Destroy(gameObject,3f);
-        }
 
-        if (this.transform.position.y < -10)
-        {
-            this.gameObject.SetActive(false);
-        }
-
-        if (this.transform.position.x > 20)
-        {
-            Destroy(gameObject, 3f);
-        }
-
-        if (this.transform.position.x < -20)
-        {
-            this.gameObject.SetActive(false);
-        }
+        Destroy(gameObject, 10f);
     }
 
 
