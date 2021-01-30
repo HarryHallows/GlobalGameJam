@@ -36,15 +36,21 @@ public class spawnOnBeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        stepTimerCheck += Time.deltaTime;
 
+        TimeStep();
+        UpdateStepChange();
+      
+    }
+
+    private void TimeStep()
+    {
         currentUpdateTime += Time.deltaTime;
 
         if (currentUpdateTime >= updateStep)
-        {        
+        {
             audioSource.clip.GetData(clipSampleData, audioSource.timeSamples);
             clipLoudness = 0f;
-            foreach( var sample in clipSampleData)
+            foreach (var sample in clipSampleData)
             {
                 clipLoudness += Mathf.Abs(sample);
             }
@@ -54,18 +60,24 @@ public class spawnOnBeat : MonoBehaviour
             clipLoudness = Mathf.Clamp(clipLoudness, minSize, maxSize);
 
             projectile.transform.localScale = new Vector3(clipLoudness, clipLoudness, clipLoudness);
-            
+
 
             currentUpdateTime = 0f;
             SpawnProjectile();
         }
+    }
 
-        if(stepTimerCheck < 12)
+    private void UpdateStepChange()
+    {
+
+        stepTimerCheck += Time.deltaTime;
+
+        if (stepTimerCheck < 12)
         {
             updateStep = 0.5f;
         }
 
-        if(stepTimerCheck > 12)
+        if (stepTimerCheck > 12)
         {
             updateStep = 0.3f;
         }

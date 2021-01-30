@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 25236350468782597}
-  m_Layer: 0
+  - component: {fileID: 1220676116}
+  - component: {fileID: 1220676114}
+  m_Layer: 8
   m_Name: ColourPalette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +34,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &1220676116
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494188586584310347}
+  m_Enabled: 1
+  m_SortingLayerID: 795786431
+  m_SortingLayer: 1
+  m_SortingOrder: 15
+--- !u!114 &1220676114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494188586584310347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3425367925c244f1cbe5a52104e07ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  down: 0
+  speed: 9000
 --- !u!1001 &3852071223343031409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42,6 +69,14 @@ PrefabInstance:
     - target: {fileID: 2905566493804984275, guid: 158282c906cdb4c61b33e125b0750baf, type: 3}
       propertyPath: m_Name
       value: ColourPickerPivot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905566493804984275, guid: 158282c906cdb4c61b33e125b0750baf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905566493804984275, guid: 158282c906cdb4c61b33e125b0750baf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2905566493804984276, guid: 158282c906cdb4c61b33e125b0750baf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -86,6 +121,10 @@ PrefabInstance:
     - target: {fileID: 2905566493804984276, guid: 158282c906cdb4c61b33e125b0750baf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905566493942767051, guid: 158282c906cdb4c61b33e125b0750baf, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 158282c906cdb4c61b33e125b0750baf, type: 3}
@@ -148,6 +187,26 @@ PrefabInstance:
     - target: {fileID: 1168511975114936471, guid: 69fa01782fd2c4b04bdbea17b618e4a0, type: 3}
       propertyPath: m_Name
       value: ColourWheelParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168511975114936471, guid: 69fa01782fd2c4b04bdbea17b618e4a0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168511975114936471, guid: 69fa01782fd2c4b04bdbea17b618e4a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168511975321673416, guid: 69fa01782fd2c4b04bdbea17b618e4a0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168511975874245685, guid: 69fa01782fd2c4b04bdbea17b618e4a0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168511976008800419, guid: 69fa01782fd2c4b04bdbea17b618e4a0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69fa01782fd2c4b04bdbea17b618e4a0, type: 3}

@@ -623,36 +623,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1220676113 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6494188586584310347, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-  m_PrefabInstance: {fileID: 1194502695740288435}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1220676114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220676113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3425367925c244f1cbe5a52104e07ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  down: 0
-  speed: 9000
---- !u!210 &1220676116
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220676113}
-  m_Enabled: 1
-  m_SortingLayerID: 795786431
-  m_SortingLayer: 1
-  m_SortingOrder: 15
 --- !u!1 &1380301750
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +661,8 @@ MonoBehaviour:
   sizeFactor: 29.8
   minSize: 0
   maxSize: 411.2
+  enemyList: []
+  stepTimerCheck: 0
 --- !u!212 &1380301752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1051,49 +1023,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2100906182098155962, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2100906182500176802, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2100906182500176802, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907850031542578431, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907850031542578431, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907850031604605600, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907850032159262813, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907850032292783307, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 6494188586584310347, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
       propertyPath: m_Name
       value: ColourPalette
-      objectReference: {fileID: 0}
-    - target: {fileID: 6494188586584310347, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6494188586584310347, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd47db81ae3a646cea322180f69a66ab, type: 3}
