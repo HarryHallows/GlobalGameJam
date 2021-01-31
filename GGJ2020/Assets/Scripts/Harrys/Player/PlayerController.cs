@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     [Header("       COMPONENT VARIABLES        ")]
@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     [Header("GameObjects")]
     [SerializeField] private GameObject colourWheel;
     [SerializeField] private GameObject colourWheelPicker;
+    [SerializeField] private GameObject[] trailObj;
+
+    private Color myColor;
+   
 
     [Header("       DATA VARIABLES      ")]
 
@@ -21,17 +25,26 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float dashSpeed;
 
+    [SerializeField] private float loseTimer = 3f;
+
     [Header("Boolean")]
     [SerializeField] private bool isDashing;
 
+
+    [SerializeField] private bool pinkColour;
+    [SerializeField] private bool tealColour;
+    [SerializeField] private bool orangeColour;
+    [SerializeField] private bool yellowColour;
+
     [Header("Strings")]
-    [SerializeField] private string gameState;
+    [SerializeField] public string gameState;
     [SerializeField] private string colourState;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       // trailObj[0].GetComponent<ParticleSystem>().startColor = myColor;
+       // trailObj[1].GetComponent<ParticleSystem>().startColor = myColor;
     }
 
     // Update is called once per frame
@@ -39,6 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         MovementInputs();
         ColourInput();
+        GameState();
     }
 
     private void FixedUpdate()
@@ -46,6 +60,33 @@ public class PlayerController : MonoBehaviour
         Movement();   
     }
 
+    public void GameState()
+    {
+        if(gameState == "LoseAnim")
+        {
+            loseTimer -= Time.deltaTime;
+
+            this.GetComponent<SpriteRenderer>().color -= new Color32(1, 1, 1, 1);
+            Debug.Log("player has been hit reducing alpha..... dead");
+
+            if (loseTimer <= 0)
+            {
+                gameState = "Lose";
+            }
+
+        }
+
+
+        if (gameState == "Lose")
+        {
+            SceneManager.LoadScene(2);    
+        }
+
+        if(gameState == "Win")
+        {
+            SceneManager.LoadScene(3);
+        }
+    }
 
     private void ColourInput()
     {
@@ -99,17 +140,77 @@ public class PlayerController : MonoBehaviour
 
         if(colourState == "Pink")
         {
+            pinkColour = true;
+
+            tealColour = false;
+            orangeColour = false;
+            yellowColour = false;
+
+
+
             this.GetComponent<SpriteRenderer>().color = new Color32(237, 0, 255, 225);
+            trailObj[3].SetActive(true);
+
+            trailObj[0].SetActive(false);
+            trailObj[1].SetActive(false);
+            trailObj[2].SetActive(false);
+            trailObj[4].SetActive(false);
         }
 
         if(colourState == "Teal")
         {
+             tealColour = true;
+
+            pinkColour = false;
+            orangeColour = false;
+            yellowColour = false;
+
+
             this.GetComponent<SpriteRenderer>().color = new Color32(0, 245, 255, 225);
+
+            trailObj[0].SetActive(true);
+
+            trailObj[1].SetActive(false);
+            trailObj[2].SetActive(false);
+            trailObj[3].SetActive(false);
+            trailObj[4].SetActive(false);
         }
 
         if(colourState == "Orange")
         {
+            orangeColour = true;
+
+            pinkColour = false;
+            tealColour = false;
+            yellowColour = false;
+
+
             this.GetComponent<SpriteRenderer>().color = new Color32(255, 124, 0, 225);
+            trailObj[2].SetActive(true);
+
+            trailObj[0].SetActive(false);
+            trailObj[1].SetActive(false);
+            trailObj[3].SetActive(false);
+            trailObj[4].SetActive(false);
+        }
+
+        if (colourState == "Yellow")
+        {
+            yellowColour = true;
+
+            tealColour = false;
+            pinkColour = false;
+            yellowColour = false;
+
+
+
+            this.GetComponent<SpriteRenderer>().color = new Color32(255, 224, 0, 225);
+            trailObj[1].SetActive(true);
+
+            trailObj[0].SetActive(false);
+            trailObj[2].SetActive(false);
+            trailObj[3].SetActive(false);
+            trailObj[4].SetActive(false);
         }
     }
     private void MovementInputs()
@@ -162,19 +263,24 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       if(collision.tag == "PinkEnemy" && isDashing == false || colourState != "Pink")
-       {
-            gameState = "Lose";
+       if(collision.CompareTag ("PinkEnemy") && pinkColour == false)
+       {        
+           gameState = "LoseAnim";            
        }
 
-        if(collision.tag == "TealEnemy" && isDashing == false || colourState != "Teal")
-        {
-            gameState = "Lose";
+        if(collision.CompareTag("TealEnemy") && tealColour == false)
+        {   
+            gameState = "LoseAnim";        
         }
 
-        if(collision.tag == "OrangeEnemy" && isDashing == false || colourState != "Orange")
-        {
-            gameState = "Lose";
+        if(collision.CompareTag("OrangeEnemy") && orangeColour == false)
+        {       
+            gameState = "LoseAnim";              
+        }
+
+        if (collision.CompareTag("YellowEnemy") && yellowColour == false)
+        { 
+            gameState = "LoseAnim";      
         }
     }
 }

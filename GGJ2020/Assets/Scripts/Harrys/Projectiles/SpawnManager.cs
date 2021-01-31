@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private GameObject[] spawnObj;
 
 
-    public enum SpawnState {SPAWNING, WAITING, COUNTING };
+    [SerializeField] public enum SpawnState {SPAWNING, WAITING, COUNTING };
 
     [System.Serializable]
    public class Wave
@@ -62,8 +62,7 @@ public class SpawnManager : MonoBehaviour
             if(!NoteIsAlive())
             {
                 //start next round
-                WaveCompleted();
-                return;
+                WaveCompleted();  
             }
             else
             {
